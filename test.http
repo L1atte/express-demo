@@ -1,0 +1,26 @@
+@uri = http://localhost:3000/
+
+###
+GET {{uri}}products
+
+###
+GET {{uri}}products/6150a1184e9435cd4ae40146
+
+###
+### POST  {{uri}}products
+### Content-Type: application/json
+
+### {
+###  "title": "product D"
+### }
+
+###
+PUT {{uri}}products/6151e62eca81d40febacbc35
+Content-Type: application/json
+
+{
+  "title": "product D"
+}
+
+###
+DELETE  {{uri}}products/6151e62eca81d40febacbc35
